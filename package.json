@@ -1,0 +1,35 @@
+{
+  "name": "dsh-free-search-lite",
+  "version": "0.1.1",
+  "description": "Zero-config web search and readable pages for DeepSeek Harness. No API keys, browsers, Python or MCP subprocesses.",
+  "type": "module",
+  "license": "MIT",
+  "author": "ayakadaisuki",
+  "repository": { "type": "git", "url": "git+https://github.com/ayakadaisuki/dsh-free-search-lite.git" },
+  "homepage": "https://github.com/ayakadaisuki/dsh-free-search-lite#readme",
+  "bugs": { "url": "https://github.com/ayakadaisuki/dsh-free-search-lite/issues" },
+  "keywords": ["dsh-plugin", "deepseek-harness", "web-search"],
+  "main": "./lib/index.js",
+  "exports": { ".": "./lib/index.js", "./locale/*.json": "./locale/*.json" },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "files": ["lib", "legal", "locale", "cordis.patch.yml", "README.md", "README.en.md", "PUBLISH.md", "LICENSE", "THIRD_PARTY_NOTICES.md"],
+  "engines": { "node": ">=24.14.0", "dsh": "0.2.1-rc.3" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/*.test.mjs",
+    "test:live": "node scripts/smoke-live.mjs",
+    "prepack": "npm run build && npm test"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.5",
+    "@deepseek-ai/dsh-tools": "0.2.1-rc.3",
+    "@deepseek-ai/dsh-system-prompt": "0.2.1-rc.3"
+  },
+  "devDependencies": {
+    "@mozilla/readability": "0.6.0",
+    "esbuild": "0.25.12",
+    "ipaddr.js": "2.2.0",
+    "linkedom": "0.18.14",
+    "undici": "8.12.3"
+  }
+}
