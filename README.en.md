@@ -6,13 +6,13 @@ A community DSH plugin exposing two tools, `free_search` and `free_search_fetch`
 
 ## Installation
 
-Tested with DSH **0.2.1-rc.3**, Node 24.21.0, Windows x64. Requires Node >=24.14.0. DSH peers are intentionally pinned to the tested preview runtime.
+Adapted for DSH **0.2.1-rc.5** and **0.2.2-rc.1**, with **0.2.1-rc.3** still supported, on Node 24.21.0, Windows x64. Requires Node >=24.14.0. Plugin code is unchanged; this release only widens the `engines.dsh` and DSH peer declarations so the plugin market keeps the plugin enabled on newer runtimes.
 
 Source repository: [ayakadaisuki/dsh-free-search-lite](https://github.com/ayakadaisuki/dsh-free-search-lite). The prebuilt `lib/` is committed; users do not need to build it manually.
 
-Prebuilt package: [v0.1.1 / dsh-free-search-lite-0.1.1.tgz](https://github.com/ayakadaisuki/dsh-free-search-lite/releases/download/v0.1.1/dsh-free-search-lite-0.1.1.tgz).
+Prebuilt package: [v0.1.2 / dsh-free-search-lite-0.1.2.tgz](https://github.com/ayakadaisuki/dsh-free-search-lite/releases/download/v0.1.2/dsh-free-search-lite-0.1.2.tgz).
 
-In DSH desktop, use **Plugins → Add plugin** with `https://github.com/ayakadaisuki/dsh-free-search-lite`, or select a locally built `dsh-free-search-lite-0.1.1.tgz`. Enable the plugin and restart if prompted. Use the desktop UI for the Electron-managed `desktop` profile, not an external CLI.
+In DSH desktop, use **Plugins → Add plugin** with `https://github.com/ayakadaisuki/dsh-free-search-lite`, or select a locally built `dsh-free-search-lite-0.1.2.tgz`. Enable the plugin and restart if prompted. Use the desktop UI for the Electron-managed `desktop` profile, not an external CLI.
 
 For a CLI-managed Web profile:
 
