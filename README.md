@@ -12,7 +12,7 @@
 
 ## 兼容版本
 
-已验证 **DeepSeek Harness `0.2.1-rc.3` / Node.js 24.21.0 / Windows x64**，最低 Node.js 24.14.0。插件的 dsh peer 版本与该预览版精确匹配。其他 dsh 版本必须重新验证后发布，不能通过跳过兼容性检查强行安装。
+已适配 **DeepSeek Harness `0.2.1-rc.5` 与 `0.2.2-rc.1`**，并保留此前验证的 `0.2.1-rc.3`；环境为 Node.js 24.21.0 / Windows x64，最低 Node.js 24.14.0。插件代码未改动，本次只更新 `engines.dsh` 与 dsh peer 兼容声明，供插件市场在新版本下继续识别并启用。其他 dsh 版本必须重新验证后发布，不能通过跳过兼容性检查强行安装。
 
 本项目只有 Node.js 代码，没有平台原生依赖；macOS/Linux 尚未实测。
 
@@ -20,9 +20,9 @@
 
 源代码仓库：[ayakadaisuki/dsh-free-search-lite](https://github.com/ayakadaisuki/dsh-free-search-lite)。仓库保留预构建的 `lib/`，无需用户手工构建。
 
-预构建安装包：[v0.1.1 / dsh-free-search-lite-0.1.1.tgz](https://github.com/ayakadaisuki/dsh-free-search-lite/releases/download/v0.1.1/dsh-free-search-lite-0.1.1.tgz)。
+预构建安装包：[v0.1.2 / dsh-free-search-lite-0.1.2.tgz](https://github.com/ayakadaisuki/dsh-free-search-lite/releases/download/v0.1.2/dsh-free-search-lite-0.1.2.tgz)。
 
-在官方 dsh 桌面端打开 **插件 → 添加插件**，使用 GitHub 仓库地址 `https://github.com/ayakadaisuki/dsh-free-search-lite`；也可以选择从源码构建的 `dsh-free-search-lite-0.1.1.tgz` 安装包。确认安装来源并启用“轻量免费搜索”。如界面提示需要重启，按提示重启。桌面端管理的 `desktop` profile 请通过桌面界面安装，不要用外部 CLI 修改它。
+在官方 dsh 桌面端打开 **插件 → 添加插件**，使用 GitHub 仓库地址 `https://github.com/ayakadaisuki/dsh-free-search-lite`；也可以选择从源码构建的 `dsh-free-search-lite-0.1.2.tgz` 安装包。确认安装来源并启用“轻量免费搜索”。如界面提示需要重启，按提示重启。桌面端管理的 `desktop` profile 请通过桌面界面安装，不要用外部 CLI 修改它。
 
 对于由 CLI 管理的 Web profile，可使用：
 
