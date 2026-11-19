@@ -1,6 +1,6 @@
 {
   "name": "dsh-free-search-lite",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Zero-config web search and readable pages for DeepSeek Harness. No API keys, browsers, Python or MCP subprocesses.",
   "type": "module",
   "license": "MIT",
@@ -13,7 +13,7 @@
   "exports": { ".": "./lib/index.js", "./locale/*.json": "./locale/*.json" },
   "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
   "files": ["lib", "legal", "locale", "cordis.patch.yml", "README.md", "README.en.md", "PUBLISH.md", "LICENSE", "THIRD_PARTY_NOTICES.md"],
-  "engines": { "node": ">=24.14.0", "dsh": ">=0.2.1-rc.3 <0.2.2 || >=0.2.2-rc.1 <0.2.3" },
+  "engines": { "node": ">=24.14.0", "dsh": ">=0.1.0" },
   "scripts": {
     "build": "node scripts/build.mjs",
     "test": "node --test test/*.test.mjs",

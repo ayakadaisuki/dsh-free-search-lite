@@ -6,13 +6,13 @@ A community DSH plugin exposing two tools, `free_search` and `free_search_fetch`
 
 ## Installation
 
-Adapted for DSH **0.2.1-rc.5** and **0.2.2-rc.1**, with **0.2.1-rc.3** still supported, on Node 24.21.0, Windows x64. Requires Node >=24.14.0. Plugin code is unchanged; this release only widens the `engines.dsh` and DSH peer declarations so the plugin market keeps the plugin enabled on newer runtimes.
+The host declaration is DSH **`>=0.1.0`** (`engines.dsh`). Tested locally on **0.2.2-rc.1**, with **0.2.1-rc.3** and **0.2.1-rc.5** verified earlier, on Node 24.21.0, Windows x64. Requires Node >=24.14.0. Plugin code is unchanged; this release only updates the host declaration. Older hosts such as 0.1.x were not individually tested; please open an issue if you hit a problem.
 
 Source repository: [ayakadaisuki/dsh-free-search-lite](https://github.com/ayakadaisuki/dsh-free-search-lite). The prebuilt `lib/` is committed; users do not need to build it manually.
 
-Prebuilt package: [v0.1.2 / dsh-free-search-lite-0.1.2.tgz](https://github.com/ayakadaisuki/dsh-free-search-lite/releases/download/v0.1.2/dsh-free-search-lite-0.1.2.tgz).
+Prebuilt package: [v0.1.3 / dsh-free-search-lite-0.1.3.tgz](https://github.com/ayakadaisuki/dsh-free-search-lite/releases/download/v0.1.3/dsh-free-search-lite-0.1.3.tgz).
 
-In DSH desktop, use **Plugins → Add plugin** with `https://github.com/ayakadaisuki/dsh-free-search-lite`, or select a locally built `dsh-free-search-lite-0.1.2.tgz`. Enable the plugin and restart if prompted. Use the desktop UI for the Electron-managed `desktop` profile, not an external CLI.
+In DSH desktop, use **Plugins → Add plugin** with `https://github.com/ayakadaisuki/dsh-free-search-lite`, or select a locally built `dsh-free-search-lite-0.1.3.tgz`. Enable the plugin and restart if prompted. Use the desktop UI for the Electron-managed `desktop` profile, not an external CLI.
 
 For a CLI-managed Web profile:
 
@@ -20,7 +20,7 @@ For a CLI-managed Web profile:
 dsh plugin --profile web add github:ayakadaisuki/dsh-free-search-lite
 ```
 
-npm publication is not required. Marketplace inclusion is subject to maintainer approval; this README does not claim the plugin is already listed. See [PUBLISH.md](PUBLISH.md) for the release process.
+npm publication is not required. The plugin is listed in the community market [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) as `ayakadaisuki/dsh-free-search-lite`. See [PUBLISH.md](PUBLISH.md) for the release process.
 
 Once enabled, the plugin registers its tools globally. It does not rewrite presets, model settings, credentials, existing MCP servers or your default tool selection. A preset with an explicit tool allowlist must allow the two new names.
 

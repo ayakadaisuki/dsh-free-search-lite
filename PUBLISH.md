@@ -3,9 +3,10 @@
 ## 项目与兼容性
 
 - 仓库：https://github.com/ayakadaisuki/dsh-free-search-lite
-- 包名与版本：`dsh-free-search-lite` / `0.1.1`
-- 已验证宿主：DeepSeek Harness `0.2.1-rc.3`，不宣称所有未来版本兼容。
+- 包名与版本：`dsh-free-search-lite` / `0.1.3`
+- 宿主声明：`engines.dsh >= 0.1.0`；本机实测 DeepSeek Harness `0.2.2-rc.1`（此前验证 `0.2.1-rc.3`、`0.2.1-rc.5`）。
 - 本次通过 GitHub 发布源码和预构建 `lib/`，不依赖 npm 发布。
+- 已收录于社区插件市场 `awesome-dsh-plugin`（条目 `ayakadaisuki/dsh-free-search-lite`）。
 - 许可证：MIT；保留 free-search-mcp 上游署名以及打包第三方许可证。
 
 ## 维护者发版检查
@@ -22,7 +23,7 @@ npm pack --pack-destination releases
 
 包没有 `install`、`postinstall` 或 `prepare` 脚本。`prepack` 用于维护者构建与测试；预构建 tarball 的消费者不需要手动构建。
 
-若发布 GitHub Release，可附加 `dsh-free-search-lite-0.1.1.tgz`，使用固定 tag 下载链接；如采用 `latest/download/`，资产名应不带版本号。上传后验证实际下载链接，再加入市场条目的可选 `tarball` 字段。
+若发布 GitHub Release，可附加 `dsh-free-search-lite-0.1.3.tgz`，使用固定 tag 下载链接；如采用 `latest/download/`，资产名应不带版本号。上传后验证实际下载链接，再更新市场条目的 `tarball` 字段。
 
 ## 申请社区市场收录
 
